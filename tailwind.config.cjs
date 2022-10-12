@@ -9,7 +9,8 @@ module.exports = {
 			'xl': '1.25rem',
 			'2xl': '1.6rem',
 			'3xl': '2.2rem',
-			'4xl': '6rem',
+			'4xl': '3rem',
+			'5xl': '6rem',
 		},
 		fontFamily: {
 			sans: ['Titillium Web', 'sans-serif'],
