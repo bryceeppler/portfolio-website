@@ -1,3 +1,6 @@
+# Credits
+<a href="https://www.flaticon.com/free-icons/live-news" title="live news icons">Live news icons created by Good Ware - Flaticon</a>
+
 # Welcome to [Astro](https://astro.build)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)

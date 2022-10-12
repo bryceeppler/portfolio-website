@@ -1,12 +1,47 @@
 ---
-const { title = 'title', description = 'description' } = Astro.props;
+import TechnologyCard from "./TechnologyCard.astro";
+import LinkCard from "./LinkCard.astro";
+const {
+  title = "title",
+  description = "description",
+  technologies = ["django"],
+  links = [{ name: "github", url: "https://github.com", icon: "github" }],
+} = Astro.props;
+
+
 ---
+
 <>
-  <div class="bg-white shadow-md rounded-lg p-2 m-2 h-80">
-    <div class="flex items-center">
-      <div class="ml-4">
-        <div class="text-xl font-medium text-gray-900">{title}</div>
-        <div class="text-gray-500">{description}</div>
+  <div
+    class="bg-gray-200 shadow-md rounded-lg p-2 m-2 flex flex-col transition-all duration-300 hover:bg-white"
+  >
+    <div class="text-xl font-bold text-gray-900">{title}</div>
+    <div class="text-gray-500">{description}</div>
+    <div class="m-4"></div>
+
+    <!-- Container for technology cards at the bottom -->
+    <div class="mt-auto">
+      
+
+      <!-- LINKS -->
+      <div class="font-bold text-gray-900">Links</div>
+
+      <div class="flex flex-row flex-wrap">
+        {links.map((link) => (
+          <LinkCard {link} />
+        ))}
+        </div>
+
+
+      <!--           <img src={icons[link.icon]} class="h-10 w-10 mr-2 fill-red-400" />  -->
+      <!-- TECHNOLOGIES -->
+      <div class="font-bold text-gray-900 mt-2">Technologies</div>
+      <div class="grid grid-cols-6">
+        {
+          technologies.map((technology) => (
+            <TechnologyCard technology={technology} />
+          ))
+        }
       </div>
     </div>
   </div>

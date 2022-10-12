@@ -6,9 +6,9 @@ import BackgroundCard from "../components/BackgroundCard.astro";
 
 <Layout>
   <div class="mx-16">
-    <h1 class="text-2xl uppercase">Bryce Eppler</h1>
-    <h2 class="text-xl uppercase">Full Stack Developer</h2>
-    <p>
+    <h1 class="text-4xl font-extralight tracking-widest uppercase">Bryce Eppler</h1>
+    <h2 class="text-3xl font-light tracking-widest uppercase">Full Stack Developer</h2>
+    <p class="text-2xl font-thin tracking-wide">
       Contrary to popular belief, Lorem Ipsum is not simply random text. It has
       roots in a piece of classical Latin literature from 45 BC, making it over
       2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
@@ -20,18 +20,62 @@ import BackgroundCard from "../components/BackgroundCard.astro";
 
   <!-- 3 column grid -->
   <BackgroundCard title="Projects">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-auto">
       <Card
-        title="Frontend"
-        description="I have experience with React, Swift, and Svelte. I also have experience with TailwindCSS, Bootstrap, and Bulma."
+        title="Snapcaster"
+        description="I have experience with React, Swift, and Svelte. I also have experience with TailwindCSS, Bootstrap, and Bulma. This was a project to explore using Swift, deploying iOS apps, and using mobile devices as a development platform."
+        technologies={["react", "django", "python", "aws"]}
+        links={[
+          {
+            "name": "api",
+            "url": "",
+            "icon": "github"
+          },
+          {
+            "name": "client",
+            "url": "",
+            "icon": "github"
+          },
+          {
+            "name": "live",
+            "url": "",
+            "icon": "live"
+          }
+        ]}
       />
       <Card
-        title="Backend"
+        title="Qwery"
         description="I have experience with NodeJS, Express, PostgresQL, Django, and MongoDB. I also have experience with PHP, Laravel, and MySQL."
+        technologies={["react", "nodejs", "postgres", "prisma"]}
+        links={[
+          {
+            "name": "api",
+            "url": "https://github.com/bryceeppler/questions-app-api-js",
+            "icon": "github"
+          },
+          {
+            "name": "client",
+            "url": "https://github.com/bryceeppler/question-app-client",
+            "icon": "github"
+          },
+          {
+            "name": "live",
+            "url": "https://qwery.bryceeppler.com",
+            "icon": "live"
+          }
+        ]}
       />
       <Card
-        title="DevOps"
-        description="I have experience with Docker, Kubernetes, and AWS. I also have experience with Git, GitHub, and GitLab."
+        title="Ergonomyx"
+        description="Since May 2022, I have been working at Ergonomyx as a full stack developer on a workplace wellness platform."
+        technologies={["react", "nodejs", "django", "aws", "postgres", "docker"]}
+        links={[
+          {
+            "name": "website",
+            "url": "https://ergonomyx.com",
+            "icon": "ergonomyx"
+          }
+        ]}
       />
     </div>
   </BackgroundCard>
