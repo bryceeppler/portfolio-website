@@ -22,8 +22,8 @@ import ContactInfo from "../components/ContactInfo.astro";
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-auto">
       <Card
         title="Snapcaster"
-        description="Snapcaster is an application to search prices for Magic the Gathering trading cards across multiple Canadian websites."
-        technologies={["react", "django", "python", "aws"]}
+        description="Snapcaster is an application to search prices for Magic the Gathering trading cards across multiple Canadian websites. The application is available on the iOS App Store, and on the web."
+        technologies={["swift", "react", "django", "python", "aws", "docker"]}
         links={[
           {
             "name": "api",
@@ -31,7 +31,12 @@ import ContactInfo from "../components/ContactInfo.astro";
             "icon": "github"
           },
           {
-            "name": "client",
+            "name": "iOS client",
+            "url": "",
+            "icon": "github"
+          },
+          {
+            "name": "web client",
             "url": "",
             "icon": "github"
           },
@@ -39,13 +44,19 @@ import ContactInfo from "../components/ContactInfo.astro";
             "name": "live",
             "url": "",
             "icon": "live"
-          }
+          },
+          {
+            "name": "app store",
+            "url": "",
+            "icon": "appStore"
+          },
+          
         ]}
       />
       <Card
         title="Qwery"
         description="Qwery is an application that allows users to play mini games with their friends via SMS text messages. Partner with a friend and subscribe to mini games that are sent out daily text. Results for the minigames can be viewed on the client."
-        technologies={["react", "nodejs", "postgres", "prisma"]}
+        technologies={["react", "nodejs", "postgres", "prisma", "docker"]}
         links={[
           {
             "name": "api",
