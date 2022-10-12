@@ -3,90 +3,18 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import BackgroundCard from "../components/BackgroundCard.astro";
 import ContactInfo from "../components/ContactInfo.astro";
+import Header from "../components/Header.astro";
+import Projects from "../components/Projects.astro";
+
 ---
 
+
 <Layout>
-  <div class="mx-2">
-    <h1 class="text-4xl sm:text-5xl font-extralight tracking-widest uppercase">Bryce Eppler</h1>
-    <ContactInfo />
-    <h2 class="text-3xl font-bold tracking-widest uppercase">Full Stack Developer</h2>
-    <p class="text-xl sm:text-2xl font-thin tracking-wide">
-      My name is Bryce Eppler, I am a full stack developer from Victoria, Canada. I am currently studying Computer Science at the University of Victoria. I am passionate about building web applications and learning new technologies.
-    </p>
+  <div class="section">
+    <Header />
   </div>
 
-  <div class="p-4"/>
-
-  <!-- 3 column grid -->
-  <BackgroundCard title="Projects">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-auto">
-      <Card
-        title="Snapcaster"
-        description="Snapcaster is an application to search prices for Magic the Gathering trading cards across multiple Canadian websites. The application is available on the iOS App Store, and on the web."
-        technologies={["swift", "react", "django", "python", "aws", "docker"]}
-        links={[
-          {
-            "name": "api",
-            "url": "https://github.com/bryceeppler/snapcaster-api",
-            "icon": "github"
-          },
-          {
-            "name": "iOS client",
-            "url": "https://github.com/bryceeppler/snapcaster-ios",
-            "icon": "github"
-          },
-          {
-            "name": "web client",
-            "url": "https://github.com/bryceeppler/snapcaster-frontend",
-            "icon": "github"
-          },
-          {
-            "name": "live",
-            "url": "https://snapcaster.bryceeppler.com",
-            "icon": "live"
-          },
-          {
-            "name": "app store",
-            "url": "",
-            "icon": "appStore"
-          },
-          
-        ]}
-      />
-      <Card
-        title="Qwery"
-        description="Qwery is an application that allows users to play mini games with their friends via SMS text messages. Partner with a friend and subscribe to mini games that are sent out daily text. Results for the minigames can be viewed on the client."
-        technologies={["react", "nodejs", "postgres", "prisma", "docker"]}
-        links={[
-          {
-            "name": "api",
-            "url": "https://github.com/bryceeppler/questions-app-api-js",
-            "icon": "github"
-          },
-          {
-            "name": "client",
-            "url": "https://github.com/bryceeppler/question-app-client",
-            "icon": "github"
-          },
-          {
-            "name": "live",
-            "url": "https://qwery.bryceeppler.com",
-            "icon": "live"
-          }
-        ]}
-      />
-      <Card
-        title="Ergonomyx"
-        description="Since May 2022, I have been working at Ergonomyx as a full stack developer on a workplace wellness platform."
-        technologies={["react", "nodejs", "django", "aws", "postgres", "docker"]}
-        links={[
-          {
-            "name": "website",
-            "url": "https://ergonomyx.com",
-            "icon": "ergonomyx"
-          }
-        ]}
-      />
-    </div>
-  </BackgroundCard>
+  <div class="section">
+    <Projects />
+  </div>
 </Layout>

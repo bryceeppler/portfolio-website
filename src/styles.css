@@ -2,3 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .section {
+        @apply min-h-screen grid place-items-center content-center;
+    }
+    .hidden {
+        @apply opacity-0 transition-all duration-100;
+    }
+    .show {
+        @apply opacity-100;
+    }
+  }
