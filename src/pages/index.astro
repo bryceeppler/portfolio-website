@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import BackgroundCard from "../components/BackgroundCard.astro";
+---
+
+<Layout>
+  <div class="mx-16">
+    <h1 class="text-2xl uppercase">Bryce Eppler</h1>
+    <h2 class="text-xl uppercase">Full Stack Developer</h2>
+    <p>
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+      roots in a piece of classical Latin literature from 45 BC, making it over
+      2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+      College in Virginia.
+    </p>
+  </div>
+
+  <div class="p-4"/>
+
+  <!-- 3 column grid -->
+  <BackgroundCard title="Projects">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <Card
+        title="Frontend"
+        description="I have experience with React, Swift, and Svelte. I also have experience with TailwindCSS, Bootstrap, and Bulma."
+      />
+      <Card
+        title="Backend"
+        description="I have experience with NodeJS, Express, PostgresQL, Django, and MongoDB. I also have experience with PHP, Laravel, and MySQL."
+      />
+      <Card
+        title="DevOps"
+        description="I have experience with Docker, Kubernetes, and AWS. I also have experience with Git, GitHub, and GitLab."
+      />
+    </div>
+  </BackgroundCard>
+</Layout>
