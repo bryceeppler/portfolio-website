@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @layer components {
-    .section {
-        @apply min-h-screen grid place-items-center content-center;
-    }
-    .hidden {
-        @apply opacity-0 transition-all duration-100;
-    }
-    .show {
-        @apply opacity-100;
-    }
+  .section {
+    @apply grid place-items-center content-center  min-h-screen;
   }
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+}
