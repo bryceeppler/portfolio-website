@@ -1,22 +1,24 @@
 ---
 import BackgroundCard from "./BackgroundCard.astro";
 import Card from "./Card.astro";
+import snapcaster from '../images/snapcaster.png';
 ---
 
-<BackgroundCard title="Projects">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-auto">
+<>
+  <h2 class="flex flex-col items-center text-3xl font-mono">Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-1 gap-3 max-w-2xl mx-auto">
     <Card
-      title="Snapcaster"
-      description="Snapcaster is an application to search prices for Magic the Gathering trading cards across multiple Canadian websites. The application is available on the iOS App Store, and on the web."
+      title="snapcaster.ca"
+      description="snapcaster is a search engine for Magic: the Gathering collectible cards. It scrapes over 20 different game stores accross Canada."
       technologies={[
         "swift",
         "react",
         "fastapi",
-        "django",
         "python",
         "aws",
         "docker",
       ]}
+      image={snapcaster}
       links={[
         {
           name: "snapcaster.ca",
@@ -77,14 +79,9 @@ import Card from "./Card.astro";
           url: "https://github.com/bryceeppler/question-app-client",
           icon: "github",
         },
-        // {
-        //   "name": "live",
-        //   "url": "https://qwery.bryceeppler.com",
-        //   "icon": "live"
-        // }
       ]}
     />
-    <Card
+    <!-- <Card
       title="Ergonomyx"
       description="Since May 2022, I have been working at Ergonomyx as a full stack developer on a workplace wellness platform."
       technologies={["react", "nodejs", "django", "aws", "postgres", "docker"]}
@@ -95,6 +92,6 @@ import Card from "./Card.astro";
           icon: "ergonomyx",
         },
       ]}
-    />
+    /> -->
   </div>
-</BackgroundCard>
+  </>

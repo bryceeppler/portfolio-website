@@ -6,6 +6,7 @@ const {
   description = "description",
   technologies = ["django"],
   links = [{ name: "github", url: "https://github.com", icon: "github" }],
+  image = null,
 } = Astro.props;
 
 
@@ -13,12 +14,23 @@ const {
 
 <>
   <div
-    class="bg-gray-200 shadow-md rounded-lg p-2 m-2 flex flex-col transition-all duration-300 hover:bg-white"
+    class=" border border-white shadow-md rounded-lg p-2 m-2 flex flex-col transition-all duration-300"
   >
-    <div class="text-xl font-bold text-gray-900">{title}</div>
-    <div class="text-gray-500">{description}</div>
+    <div class="text-xl font-bold text-orange-500">{title}</div>
+    <div class="text-white">{description}</div>
     <div class="m-4"></div>
 
+
+    <!-- If image, render image -->
+    {image && (
+      <div class="flex justify-center">
+        <img
+          class="shadow-md w-1/2"
+          src={image}
+          alt={title}
+        />
+      </div>
+    )}
     <!-- Container for technology cards at the bottom -->
     <div class="mt-auto">
       

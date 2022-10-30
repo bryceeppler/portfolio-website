@@ -1,18 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+/* source code pro */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+/* roboto */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components {
-  .section {
-    @apply grid place-items-center content-center  min-h-screen;
-  }
-}
-
-.hidden {
-  opacity: 0;
-  transition: all 1s;
-}
-
-.show {
-  opacity: 1;
-}
